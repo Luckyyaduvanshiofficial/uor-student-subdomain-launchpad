@@ -1,5 +1,6 @@
 
 import { useState } from 'react';
+import { QrCode } from 'lucide-react';
 
 const PaymentInstructions = () => {
   const [activeTab, setActiveTab] = useState('upi');
@@ -33,9 +34,12 @@ const PaymentInstructions = () => {
               <div className="space-y-6">
                 <div className="flex flex-col md:flex-row items-center md:space-x-6">
                   <div className="mb-4 md:mb-0 flex justify-center">
-                    {/* Replace with an actual QR code image in a real implementation */}
-                    <div className="w-48 h-48 bg-gray-200 rounded-lg flex items-center justify-center border border-gray-300">
-                      <span className="text-gray-500">UPI QR Code</span>
+                    <div className="w-48 h-48 rounded-lg flex items-center justify-center border border-gray-300 overflow-hidden">
+                      <img 
+                        src="/lovable-uploads/c74f87a3-49d8-4850-ad3a-d158662640b5.png" 
+                        alt="UPI QR Code" 
+                        className="w-full h-full object-contain"
+                      />
                     </div>
                   </div>
                   
@@ -43,7 +47,7 @@ const PaymentInstructions = () => {
                     <div>
                       <h4 className="text-sm font-medium text-gray-500">UPI ID</h4>
                       <p className="text-lg font-mono bg-gray-50 p-2 rounded border border-gray-200 mt-1">
-                        example@upi
+                        9667907515@mbk
                       </p>
                     </div>
                     
@@ -66,21 +70,21 @@ const PaymentInstructions = () => {
                   <div>
                     <h4 className="text-sm font-medium text-gray-500">Account Holder Name</h4>
                     <p className="text-lg bg-gray-50 p-2 rounded border border-gray-200 mt-1">
-                      Your Full Name
+                      UOR Student
                     </p>
                   </div>
                   
                   <div>
                     <h4 className="text-sm font-medium text-gray-500">Account Number</h4>
                     <p className="text-lg font-mono bg-gray-50 p-2 rounded border border-gray-200 mt-1">
-                      1234567890
+                      Contact for details
                     </p>
                   </div>
                   
                   <div>
                     <h4 className="text-sm font-medium text-gray-500">IFSC Code</h4>
                     <p className="text-lg font-mono bg-gray-50 p-2 rounded border border-gray-200 mt-1">
-                      ABCD0123456
+                      Contact for details
                     </p>
                   </div>
                   
